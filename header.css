@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
+
+#header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    width: 100vw;
+    height: 9vh;
+}
+
+#left-spare-div {
+    width: 30vw;
+}
+
+#title {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Satisfy", cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+#header-top ul {
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+
+}
+
+#header-top li {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    /* background-color: aliceblue; */
+}
+
+
+/* header-bottom css */
+.header-bottom {
+    height: 5vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+.header-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    margin-inline: auto;
+    list-style: none;
+}
+
+li {
+    text-transform: capitalize;
+}
