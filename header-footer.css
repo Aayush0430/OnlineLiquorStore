@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
-
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
 #header-top {
     display: flex;
     align-items: center;
@@ -65,4 +71,64 @@
 
 li {
     text-transform: capitalize;
+}
+
+/* footer Section */
+
+footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+
+}
+
+.top{
+    background-color: red;
+    width: 20%;
+    height: 100%;
+}
+.top img{
+    height: 200px;
+    margin:10px 0 0 50px;
+}
+.mid{
+    font-size: 1.7rem;
+    font-family: "Satisfy", cursive;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 55%;
+    background-color: aquamarine;
+    height: 100%;
+}
+.mid p{
+    margin-top: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    background-color: brown;
+    padding:10px 60px;
+}
+
+.socials i {
+    cursor: pointer;
+    margin-right: 10px;
+    color: rgb(44, 42, 42);
+}
+
+.socials li {
+    /* transition: 0.3s all ease; */
+    list-style: none;
+    margin-right: 40px;
+}
+
+.bottom{
+    height: 100%;
+    width: 25%;
+    background-color: aqua;
 }
