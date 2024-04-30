@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap");
-* {
-  padding: 0;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
 }
 a {
   text-decoration: none;
@@ -53,10 +55,12 @@ a {
 
 /* header-bottom css */
 .header-bottom {
-  height: 8vh;
-  width: 100vw;
-  /* background-color: rgb(201, 201, 201); */
-  /* box-shadow: 0px 0px 3px; */
+
+    height: 8vh;
+    width: 100vw;
+    background-color: rgb(201, 201, 201);
+    /* box-shadow: 0px 0px 3px; */
+
 }
 
 .header-bottom ul {
@@ -103,6 +107,12 @@ button {
   border: none;
 }
 
+footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+=======
 .searchicon,
 .closeicon {
   height: 100%;
@@ -148,52 +158,95 @@ footer {
   display: flex;
 }
 
-.top {
-  background-color: red;
-  width: 20%;
-  height: 100%;
-}
-.top img {
-  height: 200px;
-  margin: 10px 0 0 50px;
-}
-.mid {
-  font-size: 1.7rem;
-  font-family: "Satisfy", cursive;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  width: 55%;
-  background-color: aquamarine;
-  height: 100%;
-}
-.mid p {
-  margin-top: 20px;
-  background-color: blanchedalmond;
-  text-align: center;
-}
 
+.top{
+    /* background-color: red; */
+    width: 20%;
+    height: 100%;
+}
+.top img{
+    height: 200px;
+    margin:10px 0 0 50px;
+}
+.mid{
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 55%;
+    /* background-color: aquamarine; */
+    height: 100%;
+}
+.mid p{
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: "Satisfy", cursive;
+    margin-top: 10px;
+    /* background-color: blanchedalmond; */
+    text-align: center;
+    padding: 15px 0;
+}
+.mid h2{
+    /* background-color: cyan; */
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: -1px;
+    margin-top: 35px;
+
+}
 .socials {
-  display: flex;
-  background-color: brown;
-  padding: 10px 60px;
+
+    font-weight: bold;
+    font-size: 1.7rem;
+    display: flex;
+    /* background-color: #a52a2a; */
+    padding:10px 60px;
+    display: flex;
+    justify-content: center;
+    gap:60px
 }
 
 .socials i {
-  cursor: pointer;
-  margin-right: 10px;
-  color: rgb(44, 42, 42);
+    cursor: pointer;
+    margin-right: 10px;
+    color: rgb(44, 42, 42);
+    
 }
 
 .socials li {
-  /* transition: 0.3s all ease; */
-  list-style: none;
-  margin-right: 40px;
+    /* transition: 0.3s all ease; */
+    list-style: none;
+    /* margin-right: 55px; */
 }
 
-.bottom {
-  height: 100%;
-  width: 25%;
-  background-color: aqua;
+.bottom{
+    height: 100%;
+    width: 25%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+.bottom p{
+    margin-top: -50px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* background-color: red; */
+}
+#team-images{
+    display: flex;
+    gap: 10px;
+    /* background-color: blue; */
+}
+#team-images img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 30px 25px;
+    
+}
+
