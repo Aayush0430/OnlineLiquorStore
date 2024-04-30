@@ -114,7 +114,7 @@ footer{
     
 }
 #h2-footer{
-    background: -webkit-linear-gradient(bisque,lightgray); 
+    background: -webkit-linear-gradient(bisque,rgb(222, 184, 138)); 
        text-align: center;
     font-family: "Comfortaa", sans-serif;
     font-size: 1.1rem;
@@ -157,7 +157,7 @@ footer{
     align-items: center;
 }
 .bottom p{
-    margin-top: -50px;
+    margin-top: 50px;
     font-family: "Comfortaa", sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
