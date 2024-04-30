@@ -39,6 +39,7 @@ a {
   justify-content: flex-start;
   list-style: none;
   align-items: center;
+  position: relative;
 }
 #header-top li {
   font-size: 0.9rem;
@@ -109,9 +110,34 @@ button {
   /* background-color: red; */
   font-size: 1rem;
 }
+.searchresults {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;
+  width: 250px;
+
+  display: none;
+}
+.searchresults a {
+  /* background-color: blue; */
+  height: 1.7rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0.5rem;
+}
 /* search animation */
 .show {
   transform: translateX(0);
+}
+.showresults {
+  display: flex;
+  flex-direction: column;
 }
 /* footer Section */
 
