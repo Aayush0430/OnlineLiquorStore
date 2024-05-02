@@ -81,6 +81,16 @@
           getSearchResults(searchTerm);
         }
       });
+      $("#searchinput").on("click", function () {
+        let searchTerm = $(this).val();
+        if (searchTerm.trim() === "") {
+          searchResults.style.display = "none";
+        } else {
+          searchResults.style.display = "flex";
+
+          getSearchResults(searchTerm);
+        }
+      });
     });
   </script>
 </html>
