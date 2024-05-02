@@ -20,7 +20,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./jsfiles/headerSearch.js" defer></script>
   </head>
   <body>
     <nav id="header-top">
@@ -39,10 +38,7 @@
           </div>
         </li>
         <li><i class="ri-user-line"></i>Login</li>
-        <div class="searchresults">
-          <a>tuborg</a>
-          <a>nepal ice</a>
-        </div>
+        <div class="searchresults"></div>
       </ul>
     </nav>
     <nav class="header-bottom">
@@ -59,9 +55,11 @@
     </nav>
     <div id="hello"></div>
   </body>
+  <script src="./jsfiles/headerSearch.js"></script>
   <script>
     $(document).ready(function () {
       const searchResults = document.querySelector(".searchresults");
+
       function getSearchResults(searchTerm) {
         $.ajax({
           url: "./phpfiles/searchResult.php?searchTerm=" + searchTerm,
@@ -72,6 +70,16 @@
         });
       }
       $("#searchinput").on("input", function () {
+        let searchTerm = $(this).val();
+        if (searchTerm.trim() === "") {
+          searchResults.style.display = "none";
+        } else {
+          searchResults.style.display = "flex";
+
+          getSearchResults(searchTerm);
+        }
+      });
+      $("#searchinput").on("click", function () {
         let searchTerm = $(this).val();
         if (searchTerm.trim() === "") {
           searchResults.style.display = "none";
