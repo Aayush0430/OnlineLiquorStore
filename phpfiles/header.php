@@ -1,5 +1,5 @@
 <?php
-include("./phpfiles/dbconnect.php");
+include("./dbconnect.php");
 ?>
 
 <!DOCTYPE html>
@@ -12,13 +12,13 @@ include("./phpfiles/dbconnect.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
         integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/header-footer.css" />
     <!-- jsquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./jsfiles/headerSearch.js" defer></script>
+    <script src="../jsfiles/headerSearch.js" defer></script>
 </head>
 
 <body>
@@ -51,7 +51,7 @@ include("./phpfiles/dbconnect.php");
               $allCategoriesRes = mysqli_query($conn,$allCategoriesSql);
               while($item = mysqli_fetch_assoc($allCategoriesRes)){
                 echo '
-                <li><a href="./phpfiles/products.php?cid='.$item["categoryId"].'">'.$item["categoryName"].'</a></li>
+                <li><a href="./products.php?cid='.$item["categoryId"].'">'.$item["categoryName"].'</a></li>
                 ';
               }
           ?>
@@ -65,7 +65,7 @@ $(document).ready(function() {
 
     function getSearchResults(searchTerm) {
         $.ajax({
-            url: "./phpfiles/searchResult.php?searchTerm=" + searchTerm,
+            url: "./searchResult.php?searchTerm=" + searchTerm,
             type: "get",
             success: function(data) {
                 $(".searchresults").html(data);
