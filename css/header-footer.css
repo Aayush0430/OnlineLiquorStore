@@ -5,6 +5,9 @@
   padding: 0;
   margin: 0;
 }
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: black;
