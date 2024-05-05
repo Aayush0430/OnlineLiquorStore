@@ -14,6 +14,7 @@
             min <input type="number" id="minPrice">
             max <input type="number" id="maxPrice">
             <br>
+            <div class="error"></div>
             <button id="findButton">find</button>
         </div>
     </div>
@@ -35,8 +36,9 @@ $(document).ready(function() {
         let minPrice = $('#minPrice').val();
         let maxPrice = $('#maxPrice').val();
         if ((!minPrice || !maxPrice) || (maxPrice < minPrice)) {
-            console.log("enveterva");
+            $(".error").html("<div class='error'>invalid price range</div>");
         } else {
+            $(".error").html("<div class='error'></div>");
             $.ajax({
                 url: "filterpriceproducts.php?cid=" + <?php echo $categoryId ?>,
                 type: "get",
