@@ -17,6 +17,12 @@
             <div class="error"></div>
             <button id="findButton">find</button>
         </div>
+        <div class="hightolow">
+            <p>Price</p>
+            <button class="highlowbutton" id="hightolow">High to Low</button>
+            <br>
+            <button class="highlowbutton" id="lowtohigh">Low to High</button>
+        </div>
     </div>
     <div id="products">
         <?php
@@ -51,6 +57,23 @@ $(document).ready(function() {
                 }
             })
         }
+    })
+    // high to low
+    $(document).on("click", ".highlowbutton", function() {
+
+
+        $(".error").html("<div class='error'></div>");
+        $.ajax({
+            url: "hightolow.php?cid=" + <?php echo $categoryId ?>,
+            type: "get",
+            data: {
+                buttonId: $(this).attr("id")
+            },
+            success: function(data) {
+                $('#products').html(data);
+            }
+        })
+
     })
 })
 </script>
