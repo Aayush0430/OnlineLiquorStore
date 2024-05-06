@@ -23,9 +23,8 @@ include("./phpfiles/dbconnect.php");
 
 <body>
     <?php include("header.php")?>
-    <div class="banner">
-
-    </div>
+    <div class="banner"></div>
+    <?php include("trending.php")?>
 </body>
 <script>
 $(document).ready(function() {
