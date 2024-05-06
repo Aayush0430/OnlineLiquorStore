@@ -17,6 +17,12 @@
             <div class="error"></div>
             <button id="findButton">find</button>
         </div>
+        <div class="hightolow">
+            <p>Price</p>
+            <button class="highlowbutton" id="hightolow">High to Low</button>
+            <br>
+            <button class="highlowbutton" id="lowtohigh">Low to High</button>
+        </div>
     </div>
     <div id="products">
         <?php
