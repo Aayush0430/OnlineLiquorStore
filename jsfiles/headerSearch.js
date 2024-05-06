@@ -11,16 +11,7 @@ closeIcon.addEventListener("click", () => {
   searchContent.classList.remove("show");
   searchInput.value = "";
 });
-searchInput.addEventListener("focus", () => {
-  searchResults.classList.add("showresults");
-});
-// searchInput.addEventListener("click", () => {
-//   if (searchInput.value.trim() === "") {
-//     console.log("empty");
-//   } else {
-//     console.log(searchInput.value);
-//   }
-// });
+
 searchInput.addEventListener("blur", () => {
-  searchResults.classList.remove("showresults");
+  searchResults.style.display = "none";
 });
