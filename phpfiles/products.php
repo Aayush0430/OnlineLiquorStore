@@ -58,5 +58,22 @@ $(document).ready(function() {
             })
         }
     })
+    // high to low
+    $(document).on("click", ".highlowbutton", function() {
+
+
+        $(".error").html("<div class='error'></div>");
+        $.ajax({
+            url: "hightolow.php?cid=" + <?php echo $categoryId ?>,
+            type: "get",
+            data: {
+                buttonId: $(this).attr("id")
+            },
+            success: function(data) {
+                $('#products').html(data);
+            }
+        })
+
+    })
 })
 </script>
