@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap");
+
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 .banner {
   height: 75vh;
 
@@ -11,8 +13,24 @@
   width: 90vw;
   margin-top: 6vh;
   margin-inline: auto;
-  background-image: url("../image/frontcrop.png");
+  background-image: url("../image/front.png");
   background-repeat: no-repeat;
 
   background-position: center;
+}
+.trending{
+  margin: 8vh 5vw   ;
+  background-color: rgba(211, 211, 211, 0.263);
+  height: 450px;
+}
+.trending_products{
+  margin: 50px 0px;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.trending h1{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
