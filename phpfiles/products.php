@@ -75,6 +75,5 @@ $(document).ready(function() {
         })
 
     })
-
 })
 </script>

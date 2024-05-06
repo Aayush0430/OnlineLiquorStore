@@ -4,3 +4,10 @@
     margin:0;
     padding: 0;
 }
+.banner{    
+    height: 87vh;
+    width: 100vw;
+    background-image:url("../image/frontcrop.png");
+    background-repeat:no-repeat ;
+    background-position: center;
+}
