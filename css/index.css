@@ -7,13 +7,12 @@
 }
 
 .banner {
-  height: 80vh;
+  height: 75vh;
   background-size: cover;
   width: 90vw;
   margin-top: 6vh;
   margin-inline: auto;
-  background-color: red;
-  /* background-image: url("../image/front.png"); */
+  background-image: url("../image/front.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -30,6 +29,7 @@
   justify-content: space-evenly;
 }
 .trending h1{
+  padding-top: 20px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    font-family: "Open Sans", sans-serif;
+  }

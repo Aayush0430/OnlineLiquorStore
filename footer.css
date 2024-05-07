@@ -3,8 +3,9 @@
 footer {
   height: 32vh;
   width: 100vw;
-  /* background-color: red; */
+  background-color: rgba(211, 211, 211, 0.308);
   display: flex;
+  margin-top: 10vh;
 }
 
 .top {
