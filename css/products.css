@@ -9,10 +9,60 @@ body {
 }
 #filterContainer {
   flex: 0.15;
-  /* background-color: blue; */
+  background-color: rgb(180, 180, 180);
+  /* padding: 0.6rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
 }
 #products {
   flex: 0.85;
   min-height: 90vh;
   /* background-color: yellow; */
+}
+.filterlabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+.label {
+  width: 40px;
+  /* background-color: red; */
+}
+.filterPrice {
+  display: flex;
+  flex-direction: column;
+}
+.filterlabel input {
+  width: 70px;
+  outline: none;
+  padding: 0.2rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.filtertitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.error {
+  color: red;
+}
+#findButton,
+#hightolow,
+#lowtohigh {
+  margin-inline: auto;
+  background-color: black;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  width: max-content;
+  margin-bottom: 0.5rem;
+}
+.hightolow {
+  margin-top: 1rem;
 }
