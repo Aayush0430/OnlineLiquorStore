@@ -39,19 +39,35 @@
         </div>
     </div>
     <div id="products">
-        <?php
-            $productsSql = "select * from products where productCategory=".$categoryId;
-            $prodcutsRes = mysqli_query($conn,$productsSql);
-            while($item = mysqli_fetch_assoc($prodcutsRes)){
-                echo $item['productName']. "  " ;
-                echo $item['productPrice'];
-                echo '<br/>';
-            }
-        ?>
+
     </div>
 </div>
 <script>
 $(document).ready(function() {
+    loadData(1);
+
+    function loadData(page) {
+
+        $.ajax({
+            url: "productPagination.php",
+            type: "get",
+            data: {
+                pageNo: page,
+                cid: <?php echo $categoryId ?>
+            },
+            success: function(data) {
+                $("#products").html(
+                    data
+                )
+            }
+        })
+    }
+
+
+    $(document).on("click", "button", function() {
+        let pageNo = $(this).attr("id");
+        loadData(pageNo);
+    })
     $(document).on("click", "#findButton", function() {
         let minPrice = $('#minPrice').val();
         let maxPrice = $('#maxPrice').val();
