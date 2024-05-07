@@ -1,5 +1,5 @@
 <?php
-include("./dbconnect.php");
+include("dbconnect.php");
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,9 @@ include("./dbconnect.php");
                     </button>
                 </div>
             </li>
-            <li><i class="ri-user-line"></i>Login</li>
+
+            <li><a href="login.php"><i class="ri-user-line"></i>Login</a></li>
+
             <div class="searchresults">
                 <a>tuborg</a>
                 <a>nepal ice</a>
