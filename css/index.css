@@ -7,24 +7,23 @@
 }
 
 .banner {
-  height: 75vh;
-
+  height: 80vh;
   background-size: cover;
   width: 90vw;
   margin-top: 6vh;
   margin-inline: auto;
-  background-image: url("../image/front.png");
+  background-color: red;
+  /* background-image: url("../image/front.png"); */
   background-repeat: no-repeat;
-
   background-position: center;
 }
 .trending{
-  margin: 8vh 5vw   ;
+  margin: 8vh 5vw 2vh;
   background-color: rgba(211, 211, 211, 0.263);
   height: 450px;
 }
 .trending_products{
-  margin: 50px 0px;
+  margin: 50px 0px 0px;
   height: max-content;
   display: flex;
   align-items: center;

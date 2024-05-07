@@ -1,14 +1,14 @@
 /* footer Section */
 
 footer {
-  height: 40vh;
+  height: 32vh;
   width: 100vw;
   /* background-color: red; */
   display: flex;
 }
 
 .top {
-  /* background-color: red; */
+  /* background-color: blue; */
   width: 20%;
   height: 100%;
 }
@@ -98,4 +98,5 @@ footer {
 #h2-footer{
   text-align: center;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
