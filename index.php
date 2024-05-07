@@ -1,5 +1,5 @@
 <?php
-include("./phpfiles/dbconnect.php");
+include("dbconnect.php");
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     function getSearchResults(searchTerm) {
         $.ajax({
-            url: "./phpfiles/searchResult.php?searchTerm=" + searchTerm,
+            url: "searchResult.php?searchTerm=" + searchTerm,
             type: "get",
             success: function(data) {
                 $(".searchresults").html(data);
