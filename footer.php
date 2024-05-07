@@ -43,4 +43,4 @@
         </div>
     </div>
 </footer>
-<h2 id="h2-footer">Copyright © 2024 Braverage. All rights reserved.</h2>
+<p id="h2-footer">Copyright © 2024 Braverage. All rights reserved.</p>

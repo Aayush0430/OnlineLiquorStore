@@ -18,7 +18,7 @@ a {
   justify-content: center;
   /* background-color: rgb(211, 211, 211); */
   width: 100vw;
-  height: 9vh;
+  height: 10vh;
 }
 
 #left-spare-div {
@@ -32,7 +32,7 @@ a {
   justify-content: center;
   align-items: center;
   font-family: "Satisfy", cursive;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
