@@ -1,6 +1,6 @@
 <nav id="header-top">
     <div id="left-spare-div"></div>
-    <a href="index.php">
+    <a href="./index.php">
         <p id="title">~ Braverage ~</p>
     </a>
     <ul>
