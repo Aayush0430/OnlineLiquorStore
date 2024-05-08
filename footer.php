@@ -31,15 +31,15 @@
     <div class="bottom">
         <p>Team Members</p>
         <div id="team-images">
-            <div class="img-outer">
+            <a href="https:/cyrusmaharjan.com.np" target="_blank" class="img-outer">
                 <img src="https://www.cyrusmaharjan.com.np/assets/cy-Db-QWemi.jpg" alt="Cyrus" />
-            </div>
-            <div class="img-outer">
+            </a>
+            <a href="https:/pramitamatya.com.np" target="_blank" class="img-outer">
                 <img src="https://pramitamatya.com.np/image/pramit.jpg" alt="Pramit" />
-            </div>
-            <div class="img-outer">
+            </a>
+            <a href="https:/prajapatiaayush.com.np" target="_blank" class="img-outer">
                 <img src="https://prajapatiaayush.com.np/aayu.jpg" alt="Aayush" />
-            </div>
+            </a>
         </div>
     </div>
 </footer>
