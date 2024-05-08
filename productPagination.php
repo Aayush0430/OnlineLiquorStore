@@ -5,7 +5,7 @@
     if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
     }
-    $pageNo = $_GET["pageNo"];
+    $pageNo =(int) $_GET["pageNo"];
     $categoryId = $_GET["cid"];
     $limit = 1;
     $sql = "select * from products where productCategory=".$categoryId;
@@ -31,7 +31,7 @@
 $output .= "</div>";
         $output .= "<div id='pagination'>";
         for($i=1;$i<=$totalButtons;$i++){
-            $output .= "<button id='".$i."'>".$i."</button>";
+            $output .= "<button id='".$i."' class='paginationButton'>".$i."</button>";
         }
         $output .= "</div></div>";
         mysqli_close($conn);

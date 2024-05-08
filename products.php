@@ -4,12 +4,15 @@
     $categoryId = $_GET['cid'];
 ?>
 
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="./css/products.css">
-<link rel="stylesheet" href="./css/header.css">
+<head>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
 
 <div id="productContainer">
     <div id="filterContainer">
@@ -47,26 +50,22 @@ $(document).ready(function() {
     loadData(1);
 
     function loadData(page) {
-
         $.ajax({
             url: "productPagination.php",
             type: "get",
             data: {
                 pageNo: page,
-                cid: <?php echo $categoryId ?>
+                cid: <?php echo $categoryId; ?>
             },
             success: function(data) {
-                $("#products").html(
-                    data
-                )
+                $("#products").html(data);
             }
+
         })
     }
-
-
-    $(document).on("click", "button", function() {
-        let pageNo = $(this).attr("id");
-        loadData(pageNo);
+    $(document).on("click", ".paginationButton", function() {
+        let page = $(this).attr("id");
+        loadData(page);
     })
     $(document).on("click", "#findButton", function() {
         let minPrice = $('#minPrice').val();
@@ -94,7 +93,7 @@ $(document).ready(function() {
 
         $(".error").html("<div class='error'></div>");
         $.ajax({
-            url: "hightolow.php?cid=" + <?php echo $categoryId ?>,
+            url: "highlow.php?cid=" + <?php echo $categoryId ?>,
             type: "get",
             data: {
                 buttonId: $(this).attr("id")
