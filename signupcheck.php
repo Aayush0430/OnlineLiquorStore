@@ -2,7 +2,7 @@
     
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
-        include("db_conn.php");
+        include("dbconnect.php");
         $username = $_POST["username"];
         $email = $_POST["email"];
         $password = $_POST["password"];

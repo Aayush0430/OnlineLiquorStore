@@ -27,7 +27,7 @@
                 
                 $_SESSION['login']=true;
                 // $_SESSION['username']=$item['username'];
-                $_SESSION['userid']=$item['user_id'];
+                $_SESSION['userid']=$item['uid'];
                 $_SESSION['uname']=$username;
                 header("location: index.php");
                 

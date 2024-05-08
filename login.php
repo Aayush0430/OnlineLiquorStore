@@ -50,15 +50,14 @@
     }
     ?>
     <div id="login-form">
-        <center>
-            <h2>Login Page</h2>
-        </center>
+        <h2 id="heading">Login Page</h2>
+
         <form action="logincheck.php" autocomplete="off" method="POST" class="container">
 
-            <label for="username">Username</label><br>
+            <!-- <label for="username">Username</label><br> -->
             <input type="text" class="login-input" id="username" name="username" placeholder="Username" required><br>
 
-            <label for="password">Password</label><br>
+            <!-- <label for="password">Password</label><br> -->
             <input type="password" class="login-input" id="password" name="password" placeholder="Password"
                 required><br>
 

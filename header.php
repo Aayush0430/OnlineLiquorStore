@@ -1,4 +1,9 @@
 <?php
+    if(!session_id()){
+        session_start();
+    }
+?>
+<?php
 include("dbconnect.php");
 ?>
 
@@ -40,12 +45,28 @@ include("dbconnect.php");
                 </div>
             </li>
 
-            <li><a href="login.php"><i class="ri-user-line"></i>Login</a></li>
+            <?php
+            if(isset($_SESSION['login'])&&$_SESSION['login']==true){
+                        $user_id=$_SESSION['userid'];
+                             
+                        echo "<li><a href='cart.php'>
+                                <i class='ri-shopping-cart-line'></i>
+                                </a>
+                            </li>
+                            <li><p>".$_SESSION['uname']."</p></a></li>
+                        
+                        <li><a href='logout.php'>
+                        <p class='title'>Log Out</p></a></li>";
+            }
+            else{       
+                    echo "<li><a href='login.php'><i class='ri-user-line'></i>Login</a></>";
+            }
+            ?>
 
-            <div class="searchresults">
+            <!-- <div class="searchresults">
                 <a>tuborg</a>
                 <a>nepal ice</a>
-            </div>
+            </div> -->
         </ul>
     </nav>
     <nav class="header-bottom">
