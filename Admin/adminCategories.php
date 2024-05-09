@@ -32,10 +32,10 @@ if(!session_id()){
 
 
     #cat-name {
-        margin-left: 20px;
+        margin: 0 20px;
         background-color: lightgray;
         /* color: white; */
-        width: 200px;
+        width: 150px;
         border: none;
         outline: none;
         height: 30px;

@@ -27,7 +27,7 @@
           '
           <a href="">
           <div class="cardbox">
-              <img src="https://cheers.com.np/uploads/products/8129311194908114139335443628438136997322.png"
+              <img src="'.$item['productImage'].'"
                   alt="Products" class="product_image">
               <div class="card_details">
                   <p class="name">'.$item["productName"].'</p>
