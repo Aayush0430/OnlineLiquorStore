@@ -8,13 +8,27 @@
     $prodcutsRes = mysqli_query($conn,$productsSql);
     if(mysqli_num_rows($prodcutsRes)>0){
         $output = ' <div id="products">';
-
+        $output = '<div id="allproductscontainer">';
         while($item = mysqli_fetch_assoc($prodcutsRes)){
-            $output .= $item['productName']. "  " ;
-            $output .= $item['productPrice'];
-            $output .= '<br/>';
+            $output .=
+            '
+            <a href="">
+            <div class="cardbox">
+                <img src="https://cheers.com.np/uploads/products/8129311194908114139335443628438136997322.png"
+                    alt="Products" class="product_image">
+                <div class="card_details">
+                    <p class="name">'.$item["productName"].'</p>
+                    <p class="price">'.$item["productPrice"].'</p>
+  
+                </div>
+            </div>
+          </a>
+            ';
         }
-        $output .= ' </div>';
+        $output .= "</div></div>";
+      
+        mysqli_close($conn);
+        echo $output;
     }
     else{
         $output = ' <div id="products">Not found';

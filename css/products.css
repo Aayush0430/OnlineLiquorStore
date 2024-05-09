@@ -66,3 +66,32 @@ input[type="number"]::-webkit-outer-spin-button {
 .hightolow {
   margin-top: 1rem;
 }
+#allproductscontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: 80%;
+  margin: 5vh auto;
+  gap: 1.5rem;
+  justify-items: center;
+}
+#pagination {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+.paginationButton,
+.highlowPaginationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.2rem 0.4rem;
+  margin: 0 0.35rem;
+}
+.currentPage {
+  background-color: black;
+  color: white;
+}

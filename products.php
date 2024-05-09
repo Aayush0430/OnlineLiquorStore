@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/products.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/card.css">
 </head>
 
 <div id="productContainer">
@@ -67,9 +68,8 @@ $(document).ready(function() {
         let page = $(this).attr("id");
         loadData(page);
     })
-    $(document).on("click", "#findButton", function() {
-        let minPrice = $('#minPrice').val();
-        let maxPrice = $('#maxPrice').val();
+
+    function priceRangePagination(minPrice, maxPrice) {
         if ((!minPrice || !maxPrice) || (maxPrice < minPrice)) {
             $(".error").html("<div class='error'>invalid price range</div>");
         } else {
@@ -78,30 +78,43 @@ $(document).ready(function() {
                 url: "filterpriceproducts.php?cid=" + <?php echo $categoryId ?>,
                 type: "get",
                 data: {
-                    minPrice: $('#minPrice').val(),
-                    maxPrice: $('#maxPrice').val(),
+                    minPrice: minPrice,
+                    maxPrice: maxPrice,
                 },
                 success: function(data) {
                     $('#products').html(data);
                 }
             })
         }
+    }
+    $(document).on("click", "#findButton", function() {
+        let minPrice = $('#minPrice').val();
+        let maxPrice = $('#maxPrice').val();
+        priceRangePagination(minPrice, maxPrice);
     })
     // high to low
-    $(document).on("click", ".highlowbutton", function() {
-
-
-        $(".error").html("<div class='error'></div>");
+    function loadHighLowProducts(page, id) {
         $.ajax({
             url: "highlow.php?cid=" + <?php echo $categoryId ?>,
             type: "get",
             data: {
-                buttonId: $(this).attr("id")
+                buttonId: id,
+                pageNo: page
             },
             success: function(data) {
                 $('#products').html(data);
             }
         })
+    }
+    $(document).on("click", ".highlowbutton", function() {
+        // $(".error").html("<div class='error'></div>");
+        loadHighLowProducts(1, $(this).attr("id"));
+    })
+    $(document).on("click", ".highlowPaginationButton", function() {
+        let page = $(this).attr("id");
+        let highlowmode = $(this).data("highlowmode")
+
+        loadHighLowProducts(page, highlowmode);
 
     })
 })

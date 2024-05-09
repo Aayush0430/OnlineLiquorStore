@@ -23,15 +23,34 @@
         $output = '<div id="allproductscontainer">';
        
         while($item = mysqli_fetch_assoc($pres)){
-          
-            $output .= $item['productName']. "  " ;
-                $output .= $item['productPrice'];
-                $output .= '<br/>';
+          $output .=
+          '
+          <a href="">
+          <div class="cardbox">
+              <img src="https://cheers.com.np/uploads/products/8129311194908114139335443628438136997322.png"
+                  alt="Products" class="product_image">
+              <div class="card_details">
+                  <p class="name">'.$item["productName"].'</p>
+                  <p class="price">'.$item["productPrice"].'</p>
+
+              </div>
+          </div>
+        </a>
+          ';
+
+            
         }
-$output .= "</div>";
+        $output .= "</div>";
         $output .= "<div id='pagination'>";
         for($i=1;$i<=$totalButtons;$i++){
-            $output .= "<button id='".$i."' class='paginationButton'>".$i."</button>";
+            if($pageNo==$i){
+
+                $output .= "<button id='".$i."' class='paginationButton currentPage'>".$i."</button>";
+            }
+            else{
+                $output .= "<button id='".$i."' class='paginationButton'>".$i."</button>";
+
+            }
         }
         $output .= "</div></div>";
         mysqli_close($conn);
