@@ -83,7 +83,9 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 5vh;
 }
 .paginationButton,
-.highlowPaginationButton {
+.highlowPaginationButton,
+.filterPricePaginationButton,
+.filterPriceButton {
   display: flex;
   justify-content: center;
   align-items: center;
