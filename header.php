@@ -6,7 +6,6 @@
 <?php
 include("dbconnect.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +16,8 @@ include("dbconnect.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
         integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="header.css" />
     <!-- jsquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -29,9 +28,9 @@ include("dbconnect.php");
 <body>
     <nav id="header-top">
         <div id="left-spare-div"></div>
-        <a href="#" onclick="redirectTohome()">
-            <p id="title">~ Braverage ~</p>
-        </a>
+
+        <a href="#" id="title" onclick="redirectTohome()">~ Braverage ~</a>
+
         <ul>
             <li class="searchbutton" style="padding: 0px; background: none">
                 <div class="searchcontent">
@@ -45,6 +44,7 @@ include("dbconnect.php");
                 </div>
             </li>
 
+
             <?php
             if(isset($_SESSION['login'])&&$_SESSION['login']==true){
                         $user_id=$_SESSION['userid'];
@@ -53,20 +53,17 @@ include("dbconnect.php");
                                 <i class='ri-shopping-cart-line'></i>
                                 </a>
                             </li>
-                            <li><p>".$_SESSION['uname']."</p></a></li>
+                            <li><p><i class='ri-user-line'></i>".$_SESSION['uname']."</p></a></li>
                         
-                        <li><a href='logout.php'>
-                        <p class='title'>Log Out</p></a></li>";
+                        <div<<li><a href='logout.php'>
+                        <p>Log Out</p></a></li></div>";
             }
             else{       
                     echo "<li><a href='login.php'><i class='ri-user-line'></i>Login</a></>";
             }
             ?>
 
-            <!-- <div class="searchresults">
-                <a>tuborg</a>
-                <a>nepal ice</a>
-            </div> -->
+
         </ul>
     </nav>
     <nav class="header-bottom">

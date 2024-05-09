@@ -4,7 +4,7 @@
 }
 #login-form{
     margin: 10vh auto 0;
-    height:55vh;
+    height:300px;
     width: 30vw;
     background-color: lightgray;
     border-radius: 5%;
@@ -14,7 +14,7 @@
 }
 #signup-form{
     margin: 10vh auto 0;
-    height:60vh;
+    height:350px;
     width: 30vw;
     background-color: lightgray;
     border-radius: 5%;
