@@ -117,5 +117,29 @@ $(document).ready(function() {
         loadHighLowProducts(page, highlowmode);
 
     })
+    //filter price button
+    $(document).on("click", ".filterPriceButton", function() {
+        console.log("landing");
+        let page = $(this).attr("id");
+        let minPrice = $(this).data("minprice")
+        let maxPrice = $(this).data("maxprice")
+        filterPricePagination(page, minPrice, maxPrice);
+    })
+
+    function filterPricePagination(page, minPrice, maxPrice) {
+        $.ajax({
+            url: "filterPricePagination.php?cid=" + <?php echo $categoryId ?>,
+            type: "get",
+            data: {
+                minprice: minPrice,
+                maxprice: maxPrice,
+                pageNo: page
+            },
+            success: function(data) {
+                $('#products').html(data);
+            }
+        })
+    }
+
 })
 </script>

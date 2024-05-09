@@ -1,14 +1,15 @@
 <?php
     include("dbconnect.php");
     $categoryId = $_GET['cid'];
-    $minPrice = $_GET['minPrice'];
-    $maxPrice = $_GET['maxPrice'];
+    $minPrice = (int)$_GET['minprice'];
+    $maxPrice = (int)$_GET['maxprice'];
+    $pageNo = $_GET['pageNo'];
    $limit =1;
     $sql = "select * from products where productCategory=".$categoryId." and productPrice>=".$minPrice." and productPrice<=".$maxPrice;
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
     $totalButtons = $rows/$limit;
-    $offset =(int)($limit-1 );
+    $offset =(int)($limit*($pageNo-1));
     $prodcutsSql = "select * from products where productCategory=".$categoryId." and productPrice>=".$minPrice." and productPrice<=".$maxPrice." limit ".$limit." offset ".$offset;
     $prodcutsRes = mysqli_query($conn,$prodcutsSql);
     if(mysqli_num_rows($prodcutsRes)>0){
@@ -33,13 +34,13 @@
         $output .= "</div>";
         $output .= "<div id='pagination'>";
         for($i=1;$i<=$totalButtons;$i++){
-            if($i==1){
+            if($pageNo==$i){
 
                 
-                $output .= "<button id='".$i."' class='filterPriceButton currentPage' data-minPrice='".$minPrice."' data-maxPrice='".$maxPrice."'>".$i."</button>";
+                $output .= "<button id='".$i."' class='filterPriceButton currentPage' data-minprice='".$minPrice."' data-maxprice='".$maxPrice."'>".$i."</button>";
             }
             else{
-                $output .= "<button id='".$i."' class='filterPriceButton' data-minPrice='".$minPrice."' data-maxPrice='".$maxPrice."'>".$i."</button>";
+                $output .= "<button id='".$i."' class='filterPriceButton' data-minprice='".$minPrice."' data-maxprice='".$maxPrice."'>".$i."</button>";
 
             }
 
