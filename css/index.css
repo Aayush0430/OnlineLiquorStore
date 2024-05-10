@@ -7,7 +7,7 @@
 }
 
 .banner {
-  height: 75vh;
+  height: 70vh;
   background-size: cover;
   width: 90vw;
   margin-top: 6vh;
@@ -16,20 +16,20 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.trending{
+.trending {
   margin: 8vh 5vw 2vh;
   background-color: rgba(211, 211, 211, 0.263);
   height: 450px;
 }
-.trending_products{
+.trending_products {
   margin: 50px 0px 0px;
   height: max-content;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.trending h1{
+.trending h1 {
   padding-top: 20px;
   text-align: center;
-    font-family: "Open Sans", sans-serif;
-  }
+  font-family: "Open Sans", sans-serif;
+}

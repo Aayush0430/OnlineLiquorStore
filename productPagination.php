@@ -19,8 +19,9 @@
     $pres = mysqli_query($conn,$psql);
     $output = "";
     if(mysqli_num_rows($pres)>0){
-        $output = "<div id='products'>";
-        $output = '<div id="allproductscontainer">';
+        $output .= "<div id='products'>";
+
+        $output .= '<div id="allproductscontainer">';
        
         while($item = mysqli_fetch_assoc($pres)){
           $output .=
