@@ -28,11 +28,7 @@
           '
           <a href="">
           <div class="cardbox">
-<<<<<<< HEAD
-              <img src="'.$item['productImage'].'"
-=======
               <img src="'.$item["productImage"].'"
->>>>>>> fca0af1079331f7b81151ddfc8c1a9a6822ac102
                   alt="Products" class="product_image">
               <div class="card_details">
                   <p class="name">'.$item["productName"].'</p>
