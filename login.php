@@ -5,9 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/loginSignup.css">
+
     <title>Login page</title>
 
 </head>
@@ -49,25 +49,39 @@
         }
     }
     ?>
-    <div id="login-form">
-        <h2 id="heading">Login Page</h2>
 
-        <form action="logincheck.php" autocomplete="off" method="POST" class="container">
 
-            <!-- <label for="username">Username</label><br> -->
-            <input type="text" class="login-input" id="username" name="username" placeholder="Username" required><br>
+    <div class="login">
+        <img src="image/front.png" alt="image" class="login__bg" />
 
-            <!-- <label for="password">Password</label><br> -->
-            <input type="password" class="login-input" id="password" name="password" placeholder="Password"
-                required><br>
+        <form action="logincheck.php" autocomplete="off" method="POST" class="login__form">
+            <h1 class="login__title">Login</h1>
 
-            <button type="submit" class="btn">Submit</button>
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input id="username" type="text" name="username" placeholder="Username" required
+                        class="login__input" />
+                    <i class="ri-mail-fill"></i>
+                </div>
 
-            <p>Not registered! <a href="signup.php">Signup now</a></p>
+                <div class="login__box">
+                    <input id="passw" type="password" name="password" placeholder="Password" required
+                        class="login__input" />
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+            </div>
 
+            <div class="login__check">
+                <div class="login__check-box"></div>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+                Don't have an account? <a href="signup.php">Register</a>
+            </div>
         </form>
     </div>
-
 
     <script>
     const alertdiv = document.getElementById("unmatch");
@@ -79,6 +93,7 @@
 
     })
     </script>
+
 </body>
 
 </html>

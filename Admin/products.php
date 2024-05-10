@@ -221,7 +221,7 @@ if(!session_id()){
                 alertdiv.style.display = "none";
                 alertdivinside.style.display = "none";
                 // alertdiv.style.opacity = "0";
-            }, 2000)
+            }, 1000)
 
         })
         </script>
