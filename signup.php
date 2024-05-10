@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/loginSignup.css">
+    <!-- <link rel="stylesheet" href="css/loginSignup.css"> -->
+    <link rel="stylesheet" href="css/login.css">
     <title>Signup page</title>
 
 </head>
@@ -19,28 +20,49 @@
     <?php
     include("header.php");
     ?>
-    <div id="signup-form">
-        <h2 id="heading">Signup Page</h2>
 
-        <form action="signupcheck.php" autocomplete="off" method="POST" class="container">
+    <div class="login">
+        <img src="image/botl.jpg" alt="image" class="login__bg" />
 
-            <!-- <label for="username">Username</label><br> -->
-            <input type="text" class="signup-input" id="username" name="username" placeholder="Username" required><br>
+        <form action="signupcheck.php" autocomplete="off" method="POST" class="login__form signup__form">
+            <h1 class="signup__title">Sign Up</h1>
 
-            <!-- <label for="email">Email</label><br> -->
-            <input type="email" class="signup-input" id="email" name="email" placeholder="Email"><br>
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input id="username" type="text" name="username" placeholder="Username" required
+                        class="login__input" />
+                    <i class="ri-mail-fill"></i>
+                </div>
+                <div class="login__box">
+                    <input id="email" type="text" name="enail" placeholder="Email" required class="login__input" />
+                    <i class="ri-mail-fill"></i>
+                </div>
 
-            <!-- <label for="password">Password</label><br> -->
-            <input type="password" class="signup-input" id="password" name="password" placeholder="Password"
-                required><br>
-            <input type="password" class="signup-input" id="cpassword" name="cpassword" placeholder="Confirm Password">
 
-            <button type="submit" class="btn">Submit</button>
+                <div class="login__box">
+                    <input id="password" type="password" name="password" placeholder="Password" required
+                        class="login__input" />
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+                <div class="login__box">
+                    <input id="passwordc" type="password" name="cpassword" placeholder="Confirm Password" required
+                        class="login__input" />
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+            </div>
 
-            <p>Already have an account! <a href="login.php">Login now</a></p>
+            <div class="login__check">
+                <div class="login__check-box"></div>
+            </div>
 
+            <button type="submit" class="login__button">Sign Up</button>
+
+            <div class="login__register">
+                Already have an account? <a href="login.php">Login now</a>
+            </div>
         </form>
     </div>
+
 
 
 

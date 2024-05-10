@@ -18,13 +18,13 @@
         <div id="black-cover"></div>
     </div>
     <?php
-    include("header.php");
+    include ("header.php");
     ?>
     <?php
-    if(isset($_GET["status"])){
-        $status=$_GET["status"];
-        if($status== "notmatch"){
-            echo'
+    if (isset($_GET["status"])) {
+        $status = $_GET["status"];
+        if ($status == "notmatch") {
+            echo '
             <div id="unmatch" class="alert alert-warning alert-dismissible fade show"style="text-align:center;width:100vw;position:absolute;" role="alert">
             Credentials didn\'t match!!
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -36,10 +36,10 @@
     }
     ?>
     <?php
-    if(isset($_GET["status"])){
-        $status=$_GET["status"];
-        if($status== "notexist"){
-            echo'
+    if (isset($_GET["status"])) {
+        $status = $_GET["status"];
+        if ($status == "notexist") {
+            echo '
             <div id="unmatch" class="alert alert-warning alert-dismissible fade show"style="text-align:center;width:100vw;position:absolute;" role="alert">
             User doesn\'t exist!!
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -53,7 +53,7 @@
 
 
     <div class="login">
-        <img src="image/front.png" alt="image" class="login__bg" />
+        <img src="image/botl.jpg" alt="image" class="login__bg" />
 
         <form action="logincheck.php" autocomplete="off" method="POST" class="login__form">
             <h1 class="login__title">Login</h1>

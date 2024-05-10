@@ -24,8 +24,8 @@
 }
 
 body,
-input,
-button {
+.login>input,
+.login>button {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -43,7 +43,7 @@ img {
 /*=============== LOGIN ===============*/
 .login {
   position: relative;
-  height: 86vh;
+  height: 83vh;
   display: grid;
   align-items: center;
 }
@@ -64,8 +64,13 @@ img {
   padding: 2.5rem 1rem;
   color: var(--white-color);
   border-radius: 1rem;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
 }
+.signup__form{
+  padding:1rem 1rem;
+}
+
+
 
 .login__title {
   text-align: center;
@@ -74,15 +79,24 @@ img {
   margin-bottom: 1.25rem;
   font-family: "Pacifico", cursive;}
 
+.signup__title {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-top: 0rem;
+  margin-bottom: .9rem;
+  font-family: "Pacifico", cursive;}
+
 .login__inputs, 
 .login__box {
   display: grid;
 }
 
 .login__inputs {
-  row-gap: 1.25rem;
+  row-gap: .25rem;
   margin-bottom: 1rem;
 }
+
 
 .login__box {
   grid-template-columns: 1fr max-content;
