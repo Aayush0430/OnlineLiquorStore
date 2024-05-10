@@ -37,12 +37,16 @@ include("dbconnect.php");
                     <button class="searchicon">
                         <i class="ri-search-line"></i>
                     </button>
-                    <input type="text" placeholder="Search" id="searchinput" />
+                    <form action="searchResult.php" method="get">
+                        <input type="text" placeholder="Search" id="searchinput" autocomplete="off"
+                            name="searchinput" />
+                    </form>
                     <button class="closeicon">
                         <i class="ri-close-large-line"></i>
                     </button>
                 </div>
             </li>
+
 
 
             <?php
@@ -85,39 +89,6 @@ include("dbconnect.php");
 function redirectTohome() {
     window.location.href = "index.php";
 }
-$(document).ready(function() {
-    const searchResults = document.querySelector(".searchresults");
-
-    function getSearchResults(searchTerm) {
-        $.ajax({
-            url: "./searchResult.php?searchTerm=" + searchTerm,
-            type: "get",
-            success: function(data) {
-                $(".searchresults").html(data);
-            },
-        });
-    }
-    $("#searchinput").on("input", function() {
-        let searchTerm = $(this).val();
-        if (searchTerm.trim() === "") {
-            searchResults.style.display = "none";
-        } else {
-            searchResults.style.display = "flex";
-
-            getSearchResults(searchTerm);
-        }
-    });
-    $("#searchinput").on("click", function() {
-        let searchTerm = $(this).val();
-        if (searchTerm.trim() === "") {
-            searchResults.style.display = "none";
-        } else {
-            searchResults.style.display = "flex";
-
-            getSearchResults(searchTerm);
-        }
-    });
-});
 </script>
 
 </html>

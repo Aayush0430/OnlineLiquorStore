@@ -75,6 +75,13 @@ input[type="number"]::-webkit-outer-spin-button {
   gap: 1.5rem;
   justify-items: center;
 }
+.searchtitle {
+  width: 80%;
+
+  margin-inline: auto;
+  margin-top: 5vh;
+  font-size: 1.15rem;
+}
 #pagination {
   /* background-color: red; */
   display: flex;
@@ -85,7 +92,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .paginationButton,
 .highlowPaginationButton,
 .filterPricePaginationButton,
-.filterPriceButton {
+.filterPriceButton,
+.searchresultbutton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,4 +104,23 @@ input[type="number"]::-webkit-outer-spin-button {
 .currentPage {
   background-color: black;
   color: white;
+}
+.title,
+.searchtitle {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(62, 62, 62);
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.searchtitle {
+  font-weight: lighter;
+  font-size: 1.3rem;
 }

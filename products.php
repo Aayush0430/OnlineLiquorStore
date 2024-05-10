@@ -2,6 +2,12 @@
     include("header.php");
     include("dbconnect.php");
     $categoryId = $_GET['cid'];
+    $sql = "select * from category where categoryId=".$categoryId;
+    $res = mysqli_query($conn,$sql);
+    $title = "default";
+    while($item = mysqli_fetch_assoc($res)){
+        $title = $item["categoryName"];
+    }
 ?>
 
 <head>
@@ -15,6 +21,7 @@
     <link rel="stylesheet" href="./css/card.css">
 </head>
 
+<div class="title"><?php echo $title; ?></div>
 <div id="productContainer">
     <div id="filterContainer">
         <div class="filterPrice">
@@ -42,6 +49,7 @@
             <button class="highlowbutton" id="lowtohigh">Low to High</button>
         </div>
     </div>
+
     <div id="products">
 
     </div>
@@ -107,6 +115,8 @@ $(document).ready(function() {
         })
     }
     $(document).on("click", ".highlowbutton", function() {
+        $('#minPrice').val('');
+        $('#maxPrice').val('');
         // $(".error").html("<div class='error'></div>");
         loadHighLowProducts(1, $(this).attr("id"));
     })
