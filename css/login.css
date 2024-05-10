@@ -65,6 +65,7 @@ img {
   color: var(--white-color);
   border-radius: 1rem;
   backdrop-filter: blur(6px);
+  display: grid;
 }
 .signup__form{
   padding:1rem 1rem;
