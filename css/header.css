@@ -37,12 +37,14 @@ a {
   /* background-color: red; */
   justify-content: flex-end;
   align-items: center;
-  font-family: "Satisfy", cursive;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
 }
+#title>a{
+    font-family: "Satisfy", cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 
+}
 #header-top ul {
   /* background-color: red; */
   /* color: white; */

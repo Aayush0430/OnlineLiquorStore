@@ -11,7 +11,7 @@ if(!session_id())
         session_start();
     }
     
-    include("db_conn.php");
+    include("dbconnect.php");
     $passed_product_id = $_GET['itemid'];
     // echo $passed_product_id;
     // $passed_user_id = $_GET['userid'];

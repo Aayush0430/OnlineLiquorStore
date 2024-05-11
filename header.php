@@ -30,7 +30,7 @@ include("dbconnect.php");
     <nav id="header-top">
         <div id="left-spare-div"></div>
 
-        <a href="#" id="title" onclick="redirectTohome()">~ Braverage ~</a>
+        <div id="title"><a href="#" onclick="redirectTohome()">~ Braverage ~</a></div>
 
         <ul>
             <li class="searchbutton" style="padding: 0px; background: none">
