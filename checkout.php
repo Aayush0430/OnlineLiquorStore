@@ -117,8 +117,15 @@ if(!session_id())
                     <input type="radio" class="payment-radio" name="checkout_method" value="cod" id="cod" required>
                     <label class="input-label" for="cod">Cash on
                         delivery</label>
+
                     <input type="radio" class="payment-radio" name="checkout_method" value="esewa" id="esewa" required>
-                    <label class="input-label" for="esewa"><img id="esewa-img" src="img/esewa.png" alt="e">Esewa</label>
+                    <label class="input-label" for="esewa"><img id="esewa-img" src="image/esewa.png"
+                            alt="e">Esewa</label>
+
+                    <input type="radio" class="payment-radio" name="checkout_method" value="khalti" id="khalti"
+                        required>
+                    <label class="input-label" for="khalti"><img id="esewa-img" src="image/khalti.png"
+                            alt="e">Khalti</label>
                 </div>
                 <button type="submit" class="btn btn-primary" style="margin-left:35%;margin-top:10px;">Place
                     Order</button>
@@ -129,8 +136,8 @@ if(!session_id())
             <h4>Order-list</h4>
             <div style="margin-bottom:25px;">
                 <?php
-                include("db_conn.php");
-                include("utility.php");
+                include("dbconnect.php");
+                // include("utility.php");
                 
                 $user_id=$_SESSION['userid'];
                 $sql="SELECT * from cart where user_id=$user_id";
@@ -143,13 +150,13 @@ if(!session_id())
                     $item_id=$item["item_id"];
                     $product_quantity=$item["product_quantity"];
 
-                    $sql_item="SELECT * from items where item_id=$item_id";
+                    $sql_item="SELECT * from products where productId=$item_id";
                     $result_item=mysqli_query($conn,$sql_item);
                     $item=mysqli_fetch_assoc($result_item);
                     
-                    $item_name=$item["item_name"];
-                    $item_price=$item["item_price"];
-                    $item_image=$item["item_image"];
+                    $item_name=$item["productName"];
+                    $item_price=$item["productPrice"];
+                    $item_image=$item["productImage"];
 
 
                     echo'
