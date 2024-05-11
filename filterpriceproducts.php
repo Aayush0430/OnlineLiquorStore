@@ -3,7 +3,7 @@
     $categoryId = $_GET['cid'];
     $minPrice = $_GET['minPrice'];
     $maxPrice = $_GET['maxPrice'];
-   $limit =1;
+   $limit =2;
     $sql = "select * from products where productCategory=".$categoryId." and productPrice>=".$minPrice." and productPrice<=".$maxPrice;
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
@@ -19,8 +19,9 @@
             '
             <a href="">
             <div class="cardbox">
-                <img src="'.$item["productImage"].'"
-                    alt="Products" class="product_image">
+               <div class="card-image">
+                        <img src="'.$item["productImage"].'" alt="Products" class="product_image">
+                        </div>
                 <div class="card_details">
                     <p class="name">'.$item["productName"].'</p>
                     <p class="price">'.$item["productPrice"].'</p>

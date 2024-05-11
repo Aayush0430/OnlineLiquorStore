@@ -39,9 +39,11 @@
             while($item = mysqli_fetch_assoc($pres)){
                 echo
                 '
-                <a href="">
+              <a href="productpage.php?item_id='.$item['productId'].'">
                     <div class="cardbox">
+                    <div class="card-image">
                         <img src="'.$item["productImage"].'" alt="Products" class="product_image">
+                        </div>
                         <div class="card_details">
                             <p class="name">'.$item["productName"].'</p>
                             <p class="price">'.$item["productPrice"].'</p>

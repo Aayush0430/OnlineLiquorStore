@@ -7,10 +7,11 @@ if(!session_id())
     
         if(isset($_SESSION['login'])&&$_SESSION['login']==true){
             
-        include("db_conn.php");
+        include("dbconnect.php");
 
         // $quantity=$_POST["quantity"];
         $item_id=$_POST["product_id"];
+        echo $item_id;
         // echo $quantity."  ".$item_id;        
         
             $sql2="SELECT * from cart where item_id=$item_id AND user_id=$_SESSION[userid]";

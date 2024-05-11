@@ -14,10 +14,12 @@
 }
 .product-desc{
     /* background-color: red; */
-    width: 20%;
-    padding: 250px 0 0 15% ;
+    width: 27%;
+    padding: 220px 0 5% 14% ;
     font-size: 1.5rem;
     text-align: justify;
+    display: flex;
+    justify-content: flex-end;
 }
 .product-desc>p{
     font-family: "Jaini", system-ui;}
@@ -28,9 +30,10 @@
 }
 #product-image img
 {
-    /* mix-blend-mode: multiply; */
+    mix-blend-mode: multiply;
     height: 100%;
     width: 100%;
+    /* background-color: white; */
     /* object-fit: contain; */
     object-fit: cover;
 }

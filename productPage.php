@@ -72,8 +72,8 @@ if(!session_id())
             <div id="item-button">
                 <form action="cart_handle.php" method="post">
                     <!-- <p>Quantity: </p><input type="number" min="1"> -->
+                    <input type="hidden" name="product_id" value="<?php echo $item_id ?>">
                     <input id="button-add" type="submit" value="Add to cart">
-                    <input type="hidden" name="product_id" value="'.$item_id.'">
                 </form>
             </div>
             <?php
