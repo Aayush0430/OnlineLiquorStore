@@ -7,8 +7,8 @@ if(!session_id())
     include('dbconnect.php');
     // if($_POST['item_id']){
         
-        // $item_id=$_REQUEST['item_id'];
-        $item_id=7 ;
+        $item_id=$_REQUEST['item_id'];
+        // $item_id=7 ;
         // $item_id=10;
         $sql="SELECT * from products where productId=$item_id";
         // $sql="SELECT * from items where item_id=10";
@@ -26,8 +26,9 @@ if(!session_id())
 <head>
 
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/productpage.css">
 
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/productpage.css">
     <!-- for google font -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,32 +108,25 @@ if(!session_id())
        
        while($item = mysqli_fetch_assoc($result))
        {
-           if($count<=21)
+           if($count<=10)
           //  {
            $category_id = $item['productCategory'];
            $product_id = $item['productId'];
            
            // card
            echo'
-               <div class="card my-4 box-food" style="width: 260px; height:370px;">
-                   <img src="'.$item['productImage'].'" class="card-img-top p-2" style="height:57%;object-fit:cover;">
-                   <div class="card-body text-center" style="padding:15px 10px 0px 10px;">
-                   <p class="card-title font-weight-light m-0">'.substr($item['productName'],0,50).'</p>
-                   <h4 class="card-title font-weight-bold mt-1">Rs. '.$item['productPrice'].'</h4>
-                                      <div style="position:absolute;bottom:5px;right:10px;"><i class="fa-solid fa-star" style="font-size:0.8rem;
-                   color:#f2a900;"></i><span style="font-family:comic-sans;">'.number_format((float)$item['productRating'], 1, '.', '').'/5</span></div>
+              <a href="productpage.php?item_id='.$item['productId'].'">
+                    <div class="cardbox">
+                        <div class="card-image">
+                        <img src="'.$item["productImage"].'" alt="Products" class="product_image">
+                        </div>
+                        <div class="card_details">
+                        <p class="name">'.$item["productName"].'</p>
+                            <p class="price">Rs '.$item["productPrice"].'</p>
 
-                
-                    <!-- Button trigger  -->
-                    <form action="productPage.php" method="post">
-                    <input type="hidden" name="item_id" value="'.$product_id.'">
-                  <button type="submit" style="background-color:#f2a900;border:0" class="btn btn-primary" id="button-order" data-toggle="modal" data-target="#exampleModalCenter'.$product_id.'">
-                    Order now
-                  </button>
-                    </form>
-
-                   </div>
-               </div>';
+                        </div>
+                    </div>
+                </a>';
            $count++;
            
            }

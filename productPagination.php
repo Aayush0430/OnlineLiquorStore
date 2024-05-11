@@ -7,7 +7,7 @@
     }
     $pageNo =(int) $_GET["pageNo"];
     $categoryId = $_GET["cid"];
-    $limit = 1;
+    $limit = 8;
     $sql = "select * from products where productCategory=".$categoryId;
    
     $res = mysqli_query($conn,$sql);
@@ -26,13 +26,15 @@
         while($item = mysqli_fetch_assoc($pres)){
           $output .=
           '
-          <a href="">
+          <a href="productpage.php?item_id='.$item['productId'].'">
           <div class="cardbox">
-              <img src="'.$item["productImage"].'"
-                  alt="Products" class="product_image">
+                <div class="card-image">
+                    <img src="'.$item["productImage"].'"
+                    alt="Products" class="product_image">
+                    </div>
               <div class="card_details">
                   <p class="name">'.$item["productName"].'</p>
-                  <p class="price">'.$item["productPrice"].'</p>
+                  <p class="price">Rs '.$item["productPrice"].'</p>
 
               </div>
           </div>
