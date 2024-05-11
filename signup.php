@@ -34,7 +34,7 @@
                     <i class='ri-user-line'></i>
                 </div>
                 <div class="login__box">
-                    <input id="email" type="text" name="enail" placeholder="Email" required class="login__input" />
+                    <input id="email" type="text" name="email" placeholder="Email" required class="login__input" />
                     <i class="ri-mail-fill"></i>
                 </div>
 

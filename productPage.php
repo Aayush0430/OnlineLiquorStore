@@ -8,7 +8,7 @@ if(!session_id())
     // if($_POST['item_id']){
         
         // $item_id=$_REQUEST['item_id'];
-        $item_id=10;
+        $item_id=7 ;
         // $item_id=10;
         $sql="SELECT * from products where productId=$item_id";
         // $sql="SELECT * from items where item_id=10";
@@ -59,18 +59,22 @@ if(!session_id())
             <img src="<?php echo $row['productImage']; ?>" alt="product">
         </div>
 
-        <div id="product-details">
+        <div class="product-details">
             <div id="item-name">
                 <p><?php echo $item_name;      ?></p>
             </div>
             <div id="item-price">
-                <p>Price: Rs <?php echo $row['productPrice'];      ?></p>
+                <p>
+                    <span>Rs</span> <?php echo $row['productPrice'];      ?>
+                </p>
             </div>
-            <form action="cart_handle.php" method="post">
-                <p>Quantity: </p><input type="number" min="1">
-                <input id="button-order" type="submit" value="Add to cart">
-                <input type="hidden" name="product_id" value="'.$item_id.'">
-            </form>
+            <div id="item-button">
+                <form action="cart_handle.php" method="post">
+                    <!-- <p>Quantity: </p><input type="number" min="1"> -->
+                    <input id="button-add" type="submit" value="Add to cart">
+                    <input type="hidden" name="product_id" value="'.$item_id.'">
+                </form>
+            </div>
             <?php
            
             echo'

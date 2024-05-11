@@ -1,11 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Jaini&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 .product-info{
-    background-color: blue;
+    /* background-color: blue; */
     width: 80%;
     height: 75vh;
-    
+    display: flex;
+    margin: 5vh 0 5vh 10%;
 }
 .product-desc{
-    
+    /* background-color: red; */
+    width: 20%;
+    padding: 250px 0 0 15% ;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.product-desc>p{
+    font-family: "Jaini", system-ui;}
+#product-image{
+    width: 30%;
+    overflow: hidden;
+    background-color: white;
+}
+#product-image img
+{
+    /* mix-blend-mode: multiply; */
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+    object-fit: cover;
+}
+.product-details{
+    /* background-color: gray; */
+    width: 35%;
+}
+#item-name{
+    /* background-color: red; */
+    height: 30%;
+    width: 80%;
+    margin-top: 35%;
+    overflow: hidden;
+}
+#item-name>p{
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: "Briem Hand", cursive;
+}
+#item-price{
+    /* background-color: blue; */
+    padding:30px 0 0 0;
+    /* height: 20%; */
+}
+#item-price>p{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color:goldenrod; 
+}
+#item-button{
+    /* background-color: yellow; */
+    margin-top: 5%;
+
+}
+#button-add{
+    color:wheat;
+    padding: 15px 40px;
+    font-size: 1.4rem;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    background-color: brown;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+#button-add:hover{
+    transform: scale(1.04);
 }
 
+
+/* related */
+#related-products {
+    height: auto;
+    width: 95%;
+}
 

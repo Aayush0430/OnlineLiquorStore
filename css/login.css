@@ -43,7 +43,7 @@ img {
 /*=============== LOGIN ===============*/
 .login {
   position: relative;
-  height: 83vh;
+  height: 84vh;
   display: grid;
   align-items: center;
 }

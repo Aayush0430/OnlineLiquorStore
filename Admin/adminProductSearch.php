@@ -145,8 +145,8 @@ if(!session_id()){
            
            // card
            echo'
-               <div class="card my-4 box-food" style="width: 180px; height:250px;">
-                   <img src="'.$item['productImage'].'" class="card-img-top p-2" style="height:57%;object-fit:cover;">
+               <div class="card my-4 box-food" style="width: 180px; height:310px;">
+                   <img src="'.$item['productImage'].'" class="card-img-top p-2" style="height:200px;object-fit:cover;">
                    <div class="card-body text-center" style="padding:15px 10px 0px 10px;font-size:0.9rem;">
                    <p class="card-title font-weight-light m-0">'.substr($item['productName'],0,50).'</p>
                    <h6 class="card-title font-weight-bold" style="">Rs. '.$item['productPrice'].'</h6>
