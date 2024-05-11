@@ -1,4 +1,3 @@
-<div class="trending">
     <h1>Trending Products</h1>
     <div class="trending_products">
 
@@ -85,4 +84,3 @@
             </div>
         </a> -->
     </div>
-</div>

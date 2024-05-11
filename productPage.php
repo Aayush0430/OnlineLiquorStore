@@ -87,7 +87,7 @@ if(!session_id())
             <!-- related products  -->
             <div id="related-products">
                 <h2
-                    style="text-align:center;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    style="margin-bottom:20px;width:100%;text-align:center;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                     Related Items</h2>
 
                 <div class="explore-page">
@@ -98,11 +98,10 @@ if(!session_id())
         $sql = "SELECT * FROM `products` where productCategory=$product_cat_id and productId not in ($item_id)";
               $result = mysqli_query($conn,$sql);
         $count = 1;
-         echo '<div style="width:100%;margin-left:30px;">';
              
        echo '<div class="product-container"
        style="display:flex;justify-content:space-around;
-       flex-wrap:wrap;background:rgba(250, 250, 250, 1);border-radius:15px;padding:10px;">
+       flex-wrap:wrap;background:rgba(250, 250, 250, 1);border-radius:15px;width:95%;">
        ';
        
        

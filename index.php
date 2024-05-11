@@ -25,7 +25,9 @@ include("dbconnect.php");
 <body>
     <?php include("header.php")?>
     <div class="banner"> </div>
-    <?php include("trending.php")?>
+    <div class="trending">
+        <?php include("trending.php")?>
+    </div>
 
     <?php include("footer.php"); ?>
 </body>

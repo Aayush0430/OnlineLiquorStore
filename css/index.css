@@ -4,8 +4,8 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  scroll-snap-type: y proximity;
 }
-
 .banner {
   height: 70vh;
   background-size: cover;
@@ -22,6 +22,7 @@
   height: 500px;
 }
 .trending_products {
+  scroll-snap-align: center;
   margin: 50px 0px 0px;
   height: max-content;
   display: flex;
