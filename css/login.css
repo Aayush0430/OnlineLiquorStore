@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
@@ -13,7 +13,7 @@
   --body-font: "Poppins", sans-serif;
   --h1-font-size: 2rem;
   --normal-font-size: 1rem;
-  --small-font-size: .813rem;
+  --small-font-size: 0.813rem;
 }
 
 /*=============== BASE ===============*/
@@ -24,8 +24,8 @@
 }
 
 body,
-.login>input,
-.login>button {
+.login > input,
+.login > button {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -59,62 +59,59 @@ img {
 .login__form {
   position: relative;
   margin-inline: 1.5rem;
-  background-color: hsla(0, 0%, 100%, .01);
-  border: 2px solid hsla(0, 0%, 100%, .7);
+  background-color: hsla(0, 0%, 100%, 0.01);
+  border: 2px solid hsla(0, 0%, 100%, 0.7);
   padding: 2.5rem 1rem;
   color: var(--white-color);
   border-radius: 1rem;
   backdrop-filter: blur(6px);
-  display: grid;
+  /* display: grid; */
 }
-.signup__form{
-  padding:1rem 1rem;
+.signup__form {
+  padding: 1rem 1rem;
 }
-
-
 
 .login__title {
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin-bottom: 1.25rem;
-  font-family: "Pacifico", cursive;}
+  font-family: "Pacifico", cursive;
+}
 
 .signup__title {
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin-top: 0rem;
-  margin-bottom: .9rem;
-  font-family: "Pacifico", cursive;}
+  margin-bottom: 0.9rem;
+  font-family: "Pacifico", cursive;
+}
 
-.login__inputs, 
+.login__inputs,
 .login__box {
   display: grid;
 }
 
 .login__inputs {
-  row-gap: .25rem;
+  row-gap: 0.25rem;
   margin-bottom: 1rem;
 }
 
-
 .login__box {
   grid-template-columns: 1fr max-content;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   align-items: center;
-  border: 2px solid hsla(0, 0%, 100%, .7);
+  border: 2px solid hsla(0, 0%, 100%, 0.7);
   padding-inline: 1.25rem;
   border-radius: 4rem;
 }
 
-.login__input, 
+.login__input,
 .login__button {
   border: none;
   outline: none;
 }
-
-
 
 .login__input {
   width: 100%;
@@ -122,9 +119,7 @@ img {
   background: none !important;
   color: var(--white-color);
   padding-block: 1rem;
-    
 }
-
 
 .login__input::placeholder {
   color: var(--white-color);
@@ -134,7 +129,7 @@ img {
   font-size: 1.25rem;
 }
 
-.login__check, 
+.login__check,
 .login__check-box {
   display: flex;
   justify-content: space-between;
@@ -147,7 +142,7 @@ img {
 }
 
 .login__check-box {
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 }
 
 .login__check-input {
