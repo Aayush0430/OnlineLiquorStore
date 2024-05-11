@@ -59,7 +59,7 @@ a {
 }
 form {
   /* background: red; */
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 #header-top li {
