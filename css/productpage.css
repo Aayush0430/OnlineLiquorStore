@@ -130,7 +130,7 @@
     border-radius:0 3px 3px 0 ;
 
 }
-/* #input-quantity::-webkit-outer-spin-button,
+#input-quantity::-webkit-outer-spin-button,
 #input-quantity::-webkit-inner-spin-button {
     -webkit-appearance: none;
-} */
+}

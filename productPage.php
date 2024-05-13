@@ -74,7 +74,7 @@ if(!session_id())
                 </div>
                 <div id="item-price">
                     <p>
-                        <span>Rs</span> <span id="product-price"><?php echo $item_price;?></span>
+                        <span>Rs</span> <?php echo $item_price;?>
                     </p>
                 </div>
                 <div id="item-button">
