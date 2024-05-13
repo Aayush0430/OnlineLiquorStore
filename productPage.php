@@ -78,7 +78,6 @@ if(!session_id())
                     </p>
                 </div>
                 <div id="item-button">
-                    <!-- <p>Quantity: </p><input type="number" min="1"> -->
                     <input type="hidden" name="product_id" value="<?php echo $item_id ?>">
                     <input id="button-add" type="submit" value="Add to cart">
             </form>
