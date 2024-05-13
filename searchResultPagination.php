@@ -21,8 +21,10 @@
             '
             <a href="">
             <div class="cardbox">
+            <div class="card-image">
                 <img src="'.$item["productImage"].'"
                     alt="Products" class="product_image">
+                    </div>
                 <div class="card_details">
                     <p class="name">'.$item["productName"].'</p>
                     <p class="price">'.$item["productPrice"].'</p>
