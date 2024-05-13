@@ -12,7 +12,7 @@
     margin: 5vh 0 5vh 10%;
 }
 .product-desc{
-    /* background-color: red; */
+    /* background-color: red   ; */
     width: 27%;
     padding: 220px 0 5% 7% ;
     font-size: 1.4rem;
@@ -47,6 +47,7 @@
     width: 80%;
     margin-top: 35%;
     overflow: hidden;
+    margin-bottom: -5px;
 }
 #item-name>p{
     font-size: 2.5rem;
@@ -55,7 +56,7 @@
 }
 #item-price{
     /* background-color: blue; */
-    padding:30px 0 0 0;
+    padding: 0px 0 0 0;
     /* height: 20%; */
 }
 #item-price>p{
@@ -96,3 +97,40 @@
     padding: 3vh 2% 3vh;
 }
 
+.item-quantity{
+    /* background-color: greenyellow; */
+    height:35px;
+}
+#input-quantity{
+    height: 34px;
+    padding: 0;
+    text-align: center;
+    appearance: none;
+    width: 70px;
+    margin: 0;
+    border: 1px solid lightgray;
+    outline: none;
+    margin: 0 -5px 0 -5px;
+    background-color: rgba(223, 220, 220, 0.767);
+}
+.item-quantity>button{
+    /* padding: 6px; */
+    height: 35px;
+    width: 35px;
+    margin: 0;
+    border: 1px solid lightgray;
+    background-color: rgb(236, 236, 236);
+    cursor:pointer;
+}
+
+#decrease{
+    border-radius: 3px 0 0 3px ;
+}
+#increase{
+    border-radius:0 3px 3px 0 ;
+
+}
+/* #input-quantity::-webkit-outer-spin-button,
+#input-quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+} */

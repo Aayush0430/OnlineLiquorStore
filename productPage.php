@@ -15,6 +15,7 @@ if(!session_id())
     $result=mysqli_query($conn,$sql);    
     $row=mysqli_fetch_array($result);
     $item_name=$row['productName'];
+    $item_price=$row['productPrice'];
     $product_cat_id=$row['productCategory'];
     // }
 
@@ -64,19 +65,25 @@ if(!session_id())
             <div id="item-name">
                 <p><?php echo $item_name;      ?></p>
             </div>
-            <div id="item-price">
-                <p>
-                    <span>Rs</span> <?php echo $row['productPrice'];      ?>
-                </p>
-            </div>
-            <div id="item-button">
-                <form action="cart_handle.php" method="post">
+            <form action="cart_handle.php" method="post">
+
+                <div class="item-quantity">
+                    <button id="decrease" type="button" onclick="minus()"><i class="ri-subtract-line"></i></button>
+                    <input type="number" name="quantity" id="input-quantity" min="1" value="1">
+                    <button id="increase" type="button" onclick="plus()"><i class="ri-add-line"></i></button>
+                </div>
+                <div id="item-price">
+                    <p>
+                        <span>Rs</span> <span id="product-price"><?php echo $item_price;?></span>
+                    </p>
+                </div>
+                <div id="item-button">
                     <!-- <p>Quantity: </p><input type="number" min="1"> -->
                     <input type="hidden" name="product_id" value="<?php echo $item_id ?>">
                     <input id="button-add" type="submit" value="Add to cart">
-                </form>
-            </div>
-            <?php
+            </form>
+        </div>
+        <?php
            
             echo'
 
@@ -84,16 +91,13 @@ if(!session_id())
     </div>';
     ?>
 
-            <!-- related products  -->
-            <div id="related-products">
-                <h2
-                    style="margin-bottom:20px;width:100%;text-align:center;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                    Related Items</h2>
-
-                <div class="explore-page">
-
-
-                    <?php
+        <!-- related products  -->
+        <div id="related-products">
+            <h2
+                style="margin-bottom:20px;width:100%;text-align:center;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Related Items</h2>
+            <div class="explore-page">
+                <?php
             // $product_cat_id=$row['product_cat_id'];
         $sql = "SELECT * FROM `products` where productCategory=$product_cat_id and productId not in ($item_id)";
               $result = mysqli_query($conn,$sql);
@@ -129,28 +133,41 @@ if(!session_id())
            $count++;
            
            }
-       
-           
        echo '</div>';
      echo '</div>';
-
         ?>
-
-
-
-
-
-
-
-
-
-                </div>
             </div>
-            <div id="footer-section">
-                <?php
+        </div>
+        <?php
         include('footer.php');
         ?>
+        <script>
+        function minus() {
 
+            quantity = document.getElementById("input-quantity");
+            oldvalue = quantity.value;
+            if (oldvalue > 1) {
+                quantity.value = oldvalue - 1;
+            }
+        }
+
+        function plus() {
+            quantity = document.getElementById("input-quantity");
+            oldvalue = quantity.value;
+            quantity.value = parseInt(oldvalue) + 1;
+            // console.log(quantity.value);
+        }
+        </script>
+        <script>
+        // function handlequan() {
+        //     mainprice = document.getElementById("product-price").innerHTML;
+        //     // const price = document.getElementById("product-price");
+        //     const quan = document.getElementById("input-quantity");
+        //     // console.log(price.innerHTML)
+        //     console.log(quan.value)
+        //     price.innerHTML = parseInt(mainprice) * parseInt(quan.value);
+        // }
+        </script>
 </body>
 
 </html>
