@@ -155,7 +155,6 @@ if(!session_id())
             quantity = document.getElementById("input-quantity");
             oldvalue = quantity.value;
             quantity.value = parseInt(oldvalue) + 1;
-            // console.log(quantity.value);
         }
         </script>
         <script>
