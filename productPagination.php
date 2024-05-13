@@ -7,7 +7,7 @@
     }
     $pageNo =(int) $_GET["pageNo"];
     $categoryId = $_GET["cid"];
-    $limit = 8;
+    $limit = 4;
     $sql = "select * from products where productCategory=".$categoryId;
    
     $res = mysqli_query($conn,$sql);

@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="./css/loginSignup.css">
 
     <title>Login page</title>
-
+    <style>
+    body {
+        scrollbar-gutter: stable;
+    }
+    </style>
 </head>
 
 <body>
