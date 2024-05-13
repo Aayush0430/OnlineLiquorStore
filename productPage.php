@@ -157,16 +157,6 @@ if(!session_id())
             quantity.value = parseInt(oldvalue) + 1;
         }
         </script>
-        <script>
-        // function handlequan() {
-        //     mainprice = document.getElementById("product-price").innerHTML;
-        //     // const price = document.getElementById("product-price");
-        //     const quan = document.getElementById("input-quantity");
-        //     // console.log(price.innerHTML)
-        //     console.log(quan.value)
-        //     price.innerHTML = parseInt(mainprice) * parseInt(quan.value);
-        // }
-        </script>
 </body>
 
 </html>
