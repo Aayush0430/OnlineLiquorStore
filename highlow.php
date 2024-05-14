@@ -3,12 +3,12 @@
     $categoryId = $_GET['cid'];
    $buttonId = $_GET["buttonId"];
    $pageNo =(int) $_GET["pageNo"];
-   $limit = 4;
+   $limit = 3;
    $sql = "select * from products where productCategory=".$categoryId;
    
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
-    $totalButtons = $rows/$limit;
+    $totalButtons = ceil($rows/$limit);
     $offset =(int)($limit*($pageNo-1));
     //    default
 

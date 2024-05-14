@@ -4,11 +4,11 @@
     $minPrice = (int)$_GET['minprice'];
     $maxPrice = (int)$_GET['maxprice'];
     $pageNo = $_GET['pageNo'];
-   $limit =1;
+   $limit =3;
     $sql = "select * from products where productCategory=".$categoryId." and productPrice>=".$minPrice." and productPrice<=".$maxPrice;
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
-    $totalButtons = $rows/$limit;
+    $totalButtons = ceil($rows/$limit);
     $offset =(int)($limit*($pageNo-1));
     $prodcutsSql = "select * from products where productCategory=".$categoryId." and productPrice>=".$minPrice." and productPrice<=".$maxPrice." limit ".$limit." offset ".$offset;
     $prodcutsRes = mysqli_query($conn,$prodcutsSql);

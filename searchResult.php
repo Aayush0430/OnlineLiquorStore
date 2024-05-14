@@ -2,11 +2,11 @@
     include("dbconnect.php");
     $searchInput = $_GET['searchinput'];
     $pageNo = 1;
-   $limit =1;
+   $limit =3;
    $sql = "select * from products where productName like '%".$searchInput."%'";
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
-   $totalButtons = $rows/$limit;
+   $totalButtons =ceil( $rows/$limit);
     $offset =(int)($limit*($pageNo-1));
 ?>
 <!DOCTYPE html>
