@@ -39,7 +39,7 @@ include("dbconnect.php");
                         <i class="ri-search-line"></i>
                     </button>
                     <form action="searchResult.php" method="get">
-                        <input type="text" placeholder="Search" id="searchinput" autocomplete="off"
+                        <input type="text" placeholder="Search" id="searchinput" autocomplete="off" required
                             name="searchinput" />
                     </form>
                     <button class="closeicon">

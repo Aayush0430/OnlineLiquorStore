@@ -3,11 +3,11 @@
 
     $pageNo = $_GET['pageNo'];
     $searchInput = $_GET['searchinput'];
-   $limit =1;
+   $limit =3;
    $sql = "select * from products where productName like '%".$searchInput."%'";
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
-    $totalButtons = $rows/$limit;
+    $totalButtons = ceil($rows/$limit);
     $offset =(int)($limit*($pageNo-1));
     $psql = "select * from products where productName like '%".$searchInput."%' limit ".$limit." offset ".$offset;
     $pres = mysqli_query($conn,$psql);
