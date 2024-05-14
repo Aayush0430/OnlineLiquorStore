@@ -1,0 +1,111 @@
+ .body {}
+
+ #check-head{
+    text-align: center;
+    margin:10px 0 0 0;
+    font-size: 40px;
+    font-family: "open sans",sans-serif;
+    font-weight: 500;
+ }
+ #checkout-main-div {
+     /* background-color: red; */
+     display: flex;
+     height: auto;
+     gap: 40px;
+ }
+h4{
+    font-size: 24px;
+    font-family: "open sans", sans-serif;
+    margin-bottom:20px;
+    font-weight: 500;
+}
+.sub-container{
+    display:flex;
+     justify-content: space-between;
+}
+ #cart-items {
+     position: relative;
+     border-radius: 10px;
+     padding: 20px;
+     height: auto;
+     background-color: rgba(250, 250, 250, 1);
+     outline: 1px solid rgba(220, 220, 220, 1);
+     margin-bottom: 20px;
+ }
+
+ .items {
+     width: 400px;
+     /* background-color: blue; */
+     display: flex;
+     gap: 10px;
+     padding: 10px;
+     position: relative;
+     margin: 10px;
+     border: 1px solid black;
+     border-radius: 9px;
+ }
+
+ #esewa-img {
+
+     height: 20px;
+     /* padding-top: 5px; */
+ }
+
+ .payment-radio {
+     margin: 0 5px 0 10px;
+ }
+
+ .input-label {
+     /* margin-top: 5px; */
+ }
+
+ .form-group {
+     margin-bottom: 1rem;
+ }
+
+ .container {
+    width:520px;
+    height:300px;
+    margin-left:100px;
+    outline:1px solid rgba(220, 220, 220, 1);
+    padding:20px 40px;
+    border-radius:10px;
+    background:rgba(250, 250, 250, 1);
+   
+ }
+#phone{
+    width: 95.2%;
+}
+ .form-control {
+     display: block;
+     width: 100%;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: 0.25rem;
+     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+
+
+    .btn-primary {
+        line-height: 1.5;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid transparent;
+     padding: 0.375rem 0.75rem;
+     color: #fff;
+     background-color: #007bff;
+     margin:20px 0 0 37%;
+ }
+
+ .btn-primary:hover {
+     color: #fff;
+     background-color: #0069d9;
+     border-color: #0062cc;
+ }
+
+ 
