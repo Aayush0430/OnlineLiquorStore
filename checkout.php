@@ -43,18 +43,19 @@ if(!session_id())
 
                 <div class="sub-container" required>
                     <div class="form-group">
+                        <input type="text" class="form-control" style="width:220px;" id="phone" name="phone"
+                            maxlength="10" minlength="10" placeholder="Phone no." required>
+                    </div>
+                    <div class="form-group">
                         <input type="text" class="form-control" style="width:220px;" id="town" name="city"
                             placeholder="Town/City" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" style="width:220px;" id="street" name="street"
-                            placeholder="Street Address" required>
-                    </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="phone" name="phone" maxlength="10" minlength="10"
-                        placeholder="Phone no." required>
+                    <input type="text" class="form-control" id="street" name="street" placeholder="Street Address"
+                        required>
                 </div>
+
                 <div style="display:flex;text-align:center;align-items:center;">
                     <h6 style="margin:0px 5px 0 0;font-size:0.98rem;font-weight:700;">Payment Method:</h6>
                     <input type="radio" class="payment-radio" name="checkout_method" value="cod" id="cod" required>
@@ -105,11 +106,11 @@ if(!session_id())
                     echo'
                     <div class="items">
                         <div>
-                            <img src="'.$item_image.'" alt="image" style="height:70px;width:70px;border-radius:10px;object-fit:cover;">
+                            <img src="'.$item_image.'" alt="image" style="height:70px;width:70px;border-radius:10px;object-fit:cover;mix-blend-mode:multiply;">
                         </div>
-                        <div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-evenly;">
                             <h5>'.$item_name.'</h5>
-                            <div style="display:flex;justify-content:space-between;gap:10px;">
+                            <div style="display:flex;justify-content:space-between;gap:20px;">
                             <h6>Price: '.$item_price.'</h6>
                             <h6>Quantity: '.$product_quantity.'</h6>
                             </div>
@@ -121,7 +122,7 @@ if(!session_id())
                     }
                     echo'
                     </div>
-                    <div style="position:absolute;right:10px;bottom:2px;"><h4 style="color:red;font-weight:bold;">Grand-Total: '.$grand_total.'</h4></div>
+                    <div style="position:absolute;right:10px;bottom:-8px;"><h4 style="color:red;font-weight:bold;">Grand-Total: '.$grand_total.'</h4></div>
                     ';
                 ?>
 

@@ -8,7 +8,6 @@
     font-weight: 500;
  }
  #checkout-main-div {
-     /* background-color: red; */
      display: flex;
      height: auto;
      gap: 40px;
@@ -36,15 +35,19 @@ h4{
  .items {
      width: 400px;
      /* background-color: blue; */
+     font-size: 1.2rem;
      display: flex;
      gap: 10px;
-     padding: 10px;
+     padding: 8px;
      position: relative;
      margin: 10px;
      border: 1px solid black;
      border-radius: 9px;
  }
+ h5,h6{
 
+     font-weight: 600;
+ }
  #esewa-img {
 
      height: 20px;
@@ -73,7 +76,7 @@ h4{
     background:rgba(250, 250, 250, 1);
    
  }
-#phone{
+#street{
     width: 95.2%;
 }
  .form-control {

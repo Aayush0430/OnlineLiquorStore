@@ -3,7 +3,6 @@ if(!session_id())
     session_start();
  
 ?>
-
 <?php
     include("dbconnect.php");
     include("utility.php");
@@ -17,6 +16,7 @@ if(!session_id())
     // echo $checkout_method;
     //user id
    $user_id=$_SESSION['userid'];
+//    echo $user_id;
 
    
     //insert checkout data
@@ -36,9 +36,6 @@ if(!session_id())
     $result_cart_pull=mysqli_query($conn,$sql_cart_pull);
 
 
-
-   
-    
     //save grand total
     $grand_total=0;
 
@@ -58,7 +55,6 @@ if(!session_id())
         
         //calculate total price= price * quantity
         $total_price=$cart_item_price*$cart_item_quantity;
-
         //adding this data to order_list table
         $sql_add_to_orderList="INSERT into order_list(checkout_id,item_name,item_image,item_quantity,item_price,item_totalprice) 
         values(".$checkout_id.",'".$cart_item_name."','".$cart_item_image."',".$cart_item_quantity.",".$cart_item_price.",".$total_price.")";
@@ -77,6 +73,10 @@ if(!session_id())
     if ($checkout_method=='esewa') {
         $uid=$_SESSION['userid'];
         pay_esewa($grand_total,$checkout_id,$uid);
+    }  
+    elseif ($checkout_method=='khalti') {
+        $uid=$_SESSION['userid'];
+        pay_khalti($grand_total,$checkout_id,$uid);
         
     } else {
         

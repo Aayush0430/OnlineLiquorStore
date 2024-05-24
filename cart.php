@@ -73,7 +73,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
 
                 echo "<div class='empty-cart'><br>
                 <h1>Cart is empty</h1><br>
-                <a href='index.php'><button id='buy-more-button'>Add items</button></a><br><br>
+                <a href='index.php'><button id='checkout-button'>Add items</button></a><br><br>
                 </div>
                 ";
 
