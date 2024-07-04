@@ -3,7 +3,7 @@
     $categoryId = $_GET['cid'];
     $minPrice = $_GET['minPrice'];
     $maxPrice = $_GET['maxPrice'];
-   $limit =3;
+   $limit =4;
     $sql = "select * from products where productCategory=".$categoryId." and productPrice>=".$minPrice." and productPrice<=".$maxPrice;
     $res = mysqli_query($conn,$sql);
     $rows = mysqli_num_rows($res);
@@ -18,7 +18,7 @@ $offset =(int)($limit*(1-1));
         while($item = mysqli_fetch_assoc($prodcutsRes)){
             $output .=
             '
-            <a href="">
+            <a href="productpage.php?item_id='.$item['productId'].'">
             <div class="cardbox">
                <div class="card-image">
                         <img src="'.$item["productImage"].'" alt="Products" class="product_image">

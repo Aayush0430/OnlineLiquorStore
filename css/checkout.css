@@ -10,8 +10,10 @@
  #checkout-main-div {
      display: flex;
      height: auto;
+     /* background-color: red; */
      gap: 40px;
  }
+
 h4{
     font-size: 24px;
     font-family: "open sans", sans-serif;

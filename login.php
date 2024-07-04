@@ -91,14 +91,15 @@
     <script>
     const alertdiv = document.getElementById("unmatch");
     window.addEventListener("load", () => {
-        setTimeout(() => {
-            alertdiv.style.display = "none";
-            // alertdiv.style.opacity = "0";
-        }, 2000)
+            setTimeout(() => {
+                alertdiv.style.display = "none";
+                // alertdiv.style.opacity = "0";
+            }, 2000)
 
-    })
-    </script>
+        })
 
-</body>
+        <
+        /body>
 
-</html>
+        <
+        /html>

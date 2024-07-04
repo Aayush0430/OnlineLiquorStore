@@ -142,7 +142,6 @@ if(!session_id())
         ?>
         <script>
         function minus() {
-
             quantity = document.getElementById("input-quantity");
             oldvalue = quantity.value;
             if (oldvalue > 1) {

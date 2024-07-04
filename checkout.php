@@ -66,10 +66,7 @@ if(!session_id())
                     <label class="input-label" for="esewa"><img id="esewa-img" src="image/esewa.png"
                             alt="e">Esewa</label>
 
-                    <input type="radio" class="payment-radio" name="checkout_method" value="khalti" id="khalti"
-                        required>
-                    <label class="input-label" for="khalti"><img id="esewa-img" src="image/khalti.png"
-                            alt="k">Khalti</label>
+
                 </div>
                 <button type="submit" class="btn-primary">Place
                     Order</button>

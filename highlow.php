@@ -3,7 +3,7 @@
     $categoryId = $_GET['cid'];
    $buttonId = $_GET["buttonId"];
    $pageNo =(int) $_GET["pageNo"];
-   $limit = 3;
+   $limit = 4;
    $sql = "select * from products where productCategory=".$categoryId;
    
     $res = mysqli_query($conn,$sql);
@@ -27,7 +27,7 @@
         while($item = mysqli_fetch_assoc($prodcutsRes)){
             $output .=
             '
-            <a href="">
+            <a href="productpage.php?item_id='.$item['productId'].'">
             <div class="cardbox">
                 <div class="card-image">
                         <img src="'.$item["productImage"].'" alt="Products" class="product_image">
