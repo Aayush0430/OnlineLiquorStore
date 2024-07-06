@@ -27,7 +27,7 @@
                     </div>
                 <div class="card_details">
                     <p class="name">'.$item["productName"].'</p>
-                    <p class="price">'.$item["productPrice"].'</p>
+                    <p class="price">Rs '.$item["productPrice"].'</p>
   
                 </div>
             </div>
