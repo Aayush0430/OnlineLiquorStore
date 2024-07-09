@@ -99,7 +99,7 @@ if(!session_id()){
 
     <container class="mainbar">
 
-        <img src="../img/adminLogo.png" alt="">
+        <img src="../image/braveadmin.png" alt="">
 
         <div class="mainbar-body">
             <a href="adminDashboard.php"><button class="mainbar-butn">
@@ -122,7 +122,11 @@ if(!session_id()){
                     <p>Categories</p>
                 </button>
             </a>
-
+            <a href="orders.php "><button class="mainbar-butn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Orders</p>
+                </button>
+            </a>
             <a href="users.php "><button class="mainbar-butn">
                     <i class="ri-user-2-fill"></i>
                     <p>Users</p>

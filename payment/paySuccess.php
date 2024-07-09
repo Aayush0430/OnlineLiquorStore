@@ -98,13 +98,13 @@ if ($_GET && isset($_REQUEST["refId"])) {
                         $sql="DELETE from cart where user_id=".$user_id;
                         $res=mysqli_query($conn,$sql);
 
-                        //get email
-                        // $sql_email="SELECT email from users where user_id=".$user_id;
-                        // $res_email=mysqli_query($conn,$sql_email);
-                        // $row=mysqli_fetch_assoc($res_email);
-                        // $email=$row['email'];
-
-                        // order_mail($conn,$checkout_id,$email);
+                        include("../dbconnect.php");
+                        // get email
+                        $sql_email="SELECT email from users where uid=".$user_id;
+                        $res_email=mysqli_query($conn,$sql_email);
+                        $row=mysqli_fetch_assoc($res_email);
+                        $email=$row['email'];
+                        order_mail($conn,$checkout_id,$email);
                         
                         if(!session_id()){
                             session_start();

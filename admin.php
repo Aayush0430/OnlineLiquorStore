@@ -13,8 +13,8 @@
 
 <body>
     <div class="login-header">
-        <img src="img/adminLogo.png" alt="">
-        <!-- <a href="admin/adminDashboard.php" style="color:white;">admin</a> -->
+        <img src="image/braveadmin.png" alt="">
+        <a href="admin/adminDashboard.php" style="color:white;">admin</a>
     </div>
     <?php
     if(isset($_GET["p"])){

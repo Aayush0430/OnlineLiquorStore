@@ -33,9 +33,9 @@
             <a href="https:/cyrusmaharjan.com.np" target="_blank" class="img-outer">
                 <img src="https://www.cyrusmaharjan.com.np/assets/cy-Db-QWemi.jpg" alt="Cyrus" />
             </a>
-            <a href="https:/pramitamatya.com.np" target="_blank" class="img-outer">
+            <!-- <a href="https:/pramitamatya.com.np" target="_blank" class="img-outer">
                 <img src="https://pramitamatya.com.np/image/pramit.jpg" alt="Pramit" />
-            </a>
+            </a> -->
             <a href="https:/prajapatiaayush.com.np" target="_blank" class="img-outer">
                 <img src="https://prajapatiaayush.com.np/aayu.jpg" alt="Aayush" />
             </a>

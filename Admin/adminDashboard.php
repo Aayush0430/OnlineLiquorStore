@@ -119,31 +119,31 @@ if(!session_id()){
                 </p>
             </div>
 
-            <!-- <div class="dashboard-box green">
+            <div class="dashboard-box green">
                 <?php
-                // $sql_items="SELECT COUNT(item_id) FROM items;";
-                // $sql_items="SELECT * FROM checkout_data where sold_status=1;";
-                // $result_items = mysqli_query($conn,$sql_items);
-                // $item=mysqli_num_rows($result_items);
-                // echo"$item";
+                $sql_items="SELECT COUNT(item_id) FROM items;";
+                $sql_items="SELECT * FROM checkout_data where sold_status=1;";
+                $result_items = mysqli_query($conn,$sql_items);
+                $item=mysqli_num_rows($result_items);
+                echo"$item";
                 ?>
                 <p>NO OF ORDERS
                     <i class="fa-solid fa-cart-shopping"></i>
                 </p>
-            </div> -->
+            </div>
 
-            <!-- <div class="dashboard-box cyan">
+            <div class="dashboard-box cyan">
                 <?php
-                // $sql_items="SELECT COUNT(item_id) FROM items;";
-                // $sql_items="SELECT * FROM totalsales;";
-                // $result_items = mysqli_query($conn,$sql_items);
-                // $item=mysqli_fetch_array($result_items);
-                // echo"Rs "."$item[0]";
+                $sql_items="SELECT COUNT(item_id) FROM items;";
+                $sql_items="SELECT * FROM totalsales;";
+                $result_items = mysqli_query($conn,$sql_items);
+                $item=mysqli_fetch_array($result_items);
+                echo"Rs "."$item[0]";
                 ?>
                 <p>TOTAL SALES
                     <i class="ri-money-rupee-circle-line" style="font-size: 1.5rem;"></i>
                 </p>
-            </div> -->
+            </div>
         </div>
     </div>
     <script>

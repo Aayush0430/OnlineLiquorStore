@@ -106,12 +106,12 @@ if(!session_id())
         $sql="DELETE from cart where user_id=".$user_id;
         $res=mysqli_query($conn,$sql);
 
-        // $sql_email="SELECT email from users where user_id=".$user_id;
-        // $res_email=mysqli_query($conn,$sql_email);
-        // $row=mysqli_fetch_assoc($res_email);
-        // $email=$row['email'];
+        $sql_email="SELECT email from users where uid=".$user_id;
+        $res_email=mysqli_query($conn,$sql_email);
+        $row=mysqli_fetch_assoc($res_email);
+        $email=$row['email'];
 
-        // order_mail($conn,$checkout_id,$email);
+        order_mail($conn,$checkout_id,$email);
     header("location:orderPlaced.php");
     }
 // header("location:orderJoin.php?cid=".$checkout_id."");
