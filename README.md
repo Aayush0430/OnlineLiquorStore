@@ -1,9 +1,7 @@
 Some screenshots of the project.
 ![image](https://github.com/Aayush0430/OnlineLiquorStore/assets/160901526/afdf2f23-ae4f-49bc-8543-4fffccb3812d)
 ![image](https://github.com/user-attachments/assets/8e1e3569-71b6-4954-b03c-dfe651912fd3)
-![image](https://github.com/Aayush0430/OnlineLiquorStore/assets/160901526/58fcba5d-3b01-47bb-9641-d4ccd56dd9b4)
 ![image](https://github.com/user-attachments/assets/f9623227-b902-4525-a159-8ebffb416e02)
-![image](https://github.com/user-attachments/assets/f4df87ed-6972-41fa-80c3-890da40697a8)
 ![image](https://github.com/user-attachments/assets/f20c6f19-12e0-4396-9067-0548d390dadd)
 ![image](https://github.com/user-attachments/assets/95ab8c2e-2a0c-4783-8458-0a2ac63ac36c)
 ![image](https://github.com/user-attachments/assets/cd9a722d-e87b-43e2-8c7c-dab0a7c658a2)
