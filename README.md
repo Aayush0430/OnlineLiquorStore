@@ -3,7 +3,7 @@ Some screenshots of the project.
 ![image](https://github.com/user-attachments/assets/883d33fa-45a5-4ed7-b7d4-d157347ec228)
 ![image](https://github.com/user-attachments/assets/8ce69415-cbd3-426e-a682-c01090e2ceaf)
 ![image](https://github.com/user-attachments/assets/a9000527-5718-4aa0-b78b-11274a78321e)
-![image](https://github.com/user-attachments/assets/1e2dec95-b6f2-49dc-a8b9-4fe792da4e0a)
+![image](https://github.com/user-attachments/assets/2a397d5c-213d-44c4-a097-5318ac1b1fb1)
 ![image](https://github.com/user-attachments/assets/81495209-32c5-44cc-990b-51b2f8a4a0fd)
 ![image](https://github.com/user-attachments/assets/64c7862f-1597-41ef-9df4-7ddc2a3acb9c)
 ![image](https://github.com/user-attachments/assets/96121989-6318-4c6e-be37-5473c4166604)
