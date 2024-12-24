@@ -8,8 +8,11 @@ Some screenshots of the project.
 ![image](https://github.com/user-attachments/assets/95ab8c2e-2a0c-4783-8458-0a2ac63ac36c)
 ![image](https://github.com/user-attachments/assets/cd9a722d-e87b-43e2-8c7c-dab0a7c658a2)
 ![image](https://github.com/user-attachments/assets/a6704eb0-c30d-49d9-9b9c-831706871ce7)
+![image](https://github.com/user-attachments/assets/534f1a5a-ea0e-4c92-912e-42a662bcf082)
 ![image](https://github.com/user-attachments/assets/7dc79089-a11c-4b95-8ab7-a60644e90a92)
 ![image](https://github.com/user-attachments/assets/aedb15df-1f52-467b-bec2-a67eb5c2241d)
 ![image](https://github.com/user-attachments/assets/72e08358-817c-4695-ae67-089f41ce2b9c)
 ![image](https://github.com/user-attachments/assets/547bc1c8-f97c-42ba-9b3d-56e2121169bc)
+![image](https://github.com/user-attachments/assets/322af218-3f40-4ff7-a3f9-88a52bc2f5b3)
+![image](https://github.com/user-attachments/assets/5d4d0247-68ec-4bf8-9c5d-52c1dd3cc079)
 
