@@ -1,5 +1,5 @@
 Some screenshots of the project.
-![image](https://github.com/user-attachments/assets/16011735-4bb2-402b-83e2-35c2c89a4cf1)
+![image](https://github.com/user-attachments/assets/39573687-fc3b-486f-a48d-3462c0d8f02a)
 ![image](https://github.com/user-attachments/assets/883d33fa-45a5-4ed7-b7d4-d157347ec228)
 ![image](https://github.com/user-attachments/assets/8ce69415-cbd3-426e-a682-c01090e2ceaf)
 ![image](https://github.com/user-attachments/assets/a9000527-5718-4aa0-b78b-11274a78321e)
